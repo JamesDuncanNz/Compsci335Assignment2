@@ -1,0 +1,17 @@
+﻿@model A2MVC4.Models.ArithClass
+@{
+    ViewBag.Title = "Arith";
+}
+
+<h2>Arith</h2>
+
+@using (Html.BeginForm("Arith", "Arith", FormMethod.Get)) {
+   <p> N = @Html.TextBox("N", Model.N) </p>
+   <p> M = @Html.TextBox("M", Model.M) </p>
+   
+   <p>M+N = @Model.sum</p>
+   <p>M-N = @Model.minus</p>
+   <p>M*N = @Model.product</p>
+   <p>M/N = @Model.division , M%N = @Model.modulo</p>
+   <input type="submit" value="eval" /> 
+}
