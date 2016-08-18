@@ -1,2 +1,0 @@
-language: csharp
-solution: A2MVC4.sln
